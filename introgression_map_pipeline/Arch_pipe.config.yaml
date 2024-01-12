@@ -1,0 +1,14 @@
+sample_lists:
+    arch: /gpfs/space/home/danat95/pr3_Pap_French/KG1_SPOP/Arch.samples
+    outgroup: /gpfs/space/home/danat95/pr3_Pap_French/KG1_SPOP/YRI.all.samples
+    target: /gpfs/space/home/danat95/pr3_Pap_French/KG1_SPOP/EUR.samples
+
+base_vcf: "/gpfs/space/home/danat95/20220422_3202_phased_SNV_INDEL_SV/1kGP_high_coverage_Illumina.chr{chrom}.filtered.SNV_INDEL_SV_phased_panel.vcf.gz"
+arch_vcf: "/gpfs/space/home/danat95/pr3_Pap_French/archaic_genoms/four_hg38/chr{chrom}.4_genomes.hg38.fixed_ref.masked.bcf"
+
+rec_maps:
+    decode: /gpfs/space/home/danat95/arch_pipeline/recomb_maps/deCode.hg38.txt 
+    AAmap: /gpfs/space/home/danat95/arch_pipeline/recomb_maps/AAMap.hg38.txt
+
+# Denisova sample name from vcf, considering all others as Neandertals. Rignt now I consider only one sample could be Denisova, it could change in the future
+denisova: Denisova
